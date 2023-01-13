@@ -17,8 +17,8 @@ class CreateAttendanceTable extends Migration
             $table->id();
             $table->bigInteger('schedule_id');
             $table->bigInteger('employee_id');
-            $table->time('check_in', $precision = 0);
-            $table->time('check_out',  $precision = 0);
+            $table->time('check_in', $precision = 0)->nullable();
+            $table->time('check_out',  $precision = 0)->nullable();
             $table->timestamps();
         });
     }
