@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\API\AttendanceController;
+use App\Http\Controllers\AppHumanResources\AttendanceController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
