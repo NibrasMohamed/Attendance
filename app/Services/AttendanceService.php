@@ -60,8 +60,8 @@ class AttendanceService
                                 'attendance.*',
                                 'employees.name',
                             )
-                            ->where('check_in', '>=', $from)
-                            ->where('check_out', '<=', $to)
+                            // ->where('check_in', '>=', $from)
+                            // ->where('check_out', '<=', $to)
                             ->get();
 
         return $attendance;
