@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "5c1cd505-586d-4f4a-a982-50ee068d7269",
+		"name": "Attendace APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "UploadExcel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/Nibras/Desktop/atendance.xlsx"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/upload-excel",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"upload-excel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetEmployeeAttendance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/view-attendance/2?from=01/01/2023&to=01/14/2023",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"view-attendance",
+						"2"
+					],
+					"query": [
+						{
+							"key": "from",
+							"value": "01/01/2023"
+						},
+						{
+							"key": "to",
+							"value": "01/14/2023"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAttendance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/view-attendance/2?from=01/01/2023&to=01/14/2023",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"view-attendance",
+						"2"
+					],
+					"query": [
+						{
+							"key": "from",
+							"value": "01/01/2023"
+						},
+						{
+							"key": "to",
+							"value": "01/14/2023"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
